@@ -4,14 +4,8 @@
 
 ## Descripción del Proyecto
 
-Este proyecto tiene como objetivo principal el análisis de la relación entre los negocios y las reseñas de usuarios, utilizando dos datasets principales: uno que contiene información sobre los negocios y otro con reseñas. La idea es explorar los patrones y las tendencias que influyen en las calificaciones, el número de reseñas, la utilidad de las reseñas y otros factores, como la ubicación, las categorías del negocio y los horarios de operación.
+Este proyecto tiene como objetivo analizar los datos de negocios y sus reseñas para descubrir patrones y generar insights valiosos para la toma de decisiones de los propietarios de negocios. Utilizando un conjunto de datos de negocios y reseñas, se realizarán varias preguntas de investigación para explorar las interacciones entre los clientes y los negocios, así como las características que influyen en las calificaciones y la cantidad de reseñas.
 
-## Objetivos
-
-1. **Comprender los factores clave que influyen en la cantidad y calidad de las reseñas de un negocio.**
-2. **Identificar patrones de calificación promedio por categorías de negocio, horas de operación y ubicación geográfica.**
-3. **Explorar la relación entre los atributos del negocio y las reseñas útiles, divertidas o "cool".**
-4. **Analizar la relación entre las horas de operación y la cantidad de reseñas.**
 
 ## Dataset
 
@@ -50,59 +44,51 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
 - **text** (string): Texto completo de la reseña.
 - **date** (string): Fecha en la que se escribió la reseña.
 
-## Variables Importantes
-
-- **Variables geográficas**: `city`, `state`, `latitude`, `longitude`.
-- **Variables de negocio**: `stars`, `review_count`, `categories`, `hours`.
-- **Variables de reseñas**: `stars`, `useful`, `funny`, `cool`, `text`, `date`.
 
 ## Exploración y Análisis de Datos
 
-### Preguntas de Investigación Iniciales
+## Preguntas de Investigación Iniciales
 
-1. **¿Cómo varía el número de reseñas según las categorías de los negocios?**
-   - Se explorará si ciertos tipos de negocios (Restaurantes, Bares, Shopping, etc.) tienden a recibir más reseñas que otros.
-   - Variables a utilizar: `categories`, `review_count`.
+1. **¿Los negocios que ofrecen facilidades de accesibilidad y conveniencia, como acceso para sillas de ruedas o pago con tarjeta, tienden a recibir mejores calificaciones por parte de los clientes?**
+   - Variables clave: `WheelchairAccessible`, `BusinessAcceptsCreditCards`, `stars`, `RestaurantsPriceRange2`, `BusinessParking`, `OutdoorSeating`.
 
-2. **¿Existe alguna relación entre las horas de operación de un negocio y la cantidad de reseñas que recibe?**
-   - Se investigará si los negocios que están abiertos por más horas o que abren en días específicos (fines de semana, por ejemplo) tienden a recibir más reseñas.
-   - Variables a utilizar: `hours`, `review_count`, `stars`.
+2. **¿Los negocios ubicados en grandes ciudades o destinos turísticos tienden a recibir más reseñas y mejores calificaciones que los negocios en áreas más pequeñas o rurales?**
+   - Variables clave: `city`, `state`, `latitude`, `longitude`, `stars`, `review_count`.
 
-3. **¿Qué atributos de los negocios influyen más en la utilidad de las reseñas?**
-   - Se analizarán atributos como `RestaurantsTakeOut`, `WiFi`, y `BusinessParking` para entender cómo estos factores influyen en las reseñas consideradas útiles.
-   - Variables a utilizar: `attributes`, `useful`, `stars`.
+3. **¿Los negocios con más años de operación tienen calificaciones más estables y reciben una mayor cantidad de reseñas en comparación con los negocios más nuevos?**
+   - Variables clave: `year`, `review_count`, `stars`, `is_open`.
 
-4. **¿Cuáles son los patrones geográficos en las reseñas y calificaciones de los negocios?**
-   - Se buscará identificar patrones geográficos en la calificación de los negocios y en la cantidad de reseñas por ubicación.
-   - Variables a utilizar: `city`, `state`, `latitude`, `longitude`, `stars`, `review_count`.
+4. **¿Los negocios que ofrecen servicios personalizados, como citas previas, reservas o que permiten la presencia de mascotas (pet-friendly), tienden a recibir mejores calificaciones por parte de los clientes?**
+   - Variables clave: `ByAppointmentOnly`, `RestaurantsReservations`, `DogsAllowed`, `stars`, `GoodForMeal`, `RestaurantsGoodForGroups`.
 
-5. **¿Cómo influyen los días de la semana en las calificaciones de las reseñas?**
-   - Se analizará si existen variaciones en las calificaciones de los clientes dependiendo del día de la semana y las horas de operación.
-   - Variables a utilizar: `Monday_hours`, `Tuesday_hours`, `stars`, `useful`, `funny`.
+5. **¿Los negocios que implementan servicios de atención personalizada, como happy hour, música en vivo o promociones especiales, tienen mayor engagement en las reseñas?**
+   - Variables clave: `HappyHour`, `Music`, `Alcohol`, `BestNights`, `review_count`, `useful`, `cool`.
+
 
 ### Metodología de Análisis
 
 1. **Limpieza y preparación de los datos:**
-   - Se revisarán y limpiarán las variables de horas y atributos para asegurar su correcto análisis.
-   - Se normalizarán las horas de operación para que puedan ser utilizadas en el análisis.
+   - Se eliminarán valores faltantes y se imputarán donde sea necesario.
+   - Se transformarán los atributos booleanos en formato adecuado para el análisis.
 
 2. **Análisis de correlaciones:**
-   - Se utilizarán métodos de correlación para investigar las relaciones entre las variables (por ejemplo, si los negocios con mayor calificación tienden a recibir más reseñas útiles).
+   - Se utilizarán métodos de correlación para investigar la relación entre las calificaciones, las reseñas y los atributos del negocio.
 
 3. **Visualización de los datos:**
-   - Se crearán gráficos para visualizar cómo las diferentes variables afectan el número y tipo de reseñas.
-   - Mapas de calor para representar la relación entre las reseñas y las horas de operación o la ubicación.
+   - Se crearán gráficos para representar la relación entre las calificaciones, el número de reseñas y los diferentes atributos del negocio, incluyendo facilidades como WiFi, HappyHour y la presencia de estacionamiento.
 
 4. **Feature Scaling:**
-   - Se aplicará `standardization` o `normalization` en variables como `review_count`, `stars`, `useful` para mejorar la interpretación en los modelos de predicción.
+   - Se aplicará estandarización o normalización a las variables numéricas (`review_count`, `stars`, `useful`, etc.) para mejorar el rendimiento de los modelos predictivos.
 
 5. **Modelado predictivo:**
-   - Se implementará un modelo de clasificación para predecir qué reseñas serán útiles o "cool" basándose en los atributos del negocio y las características de la reseña.
+   - Se implementará un modelo de clasificación, utilizando métodos de filtro como la ganancia de información, para predecir si una reseña será útil o "cool" basándose en las características del negocio y las reseñas.
+
 
 ## Resultados Esperados
 
-- Identificación de los atributos de los negocios que influyen en obtener reseñas útiles o con buenas calificaciones.
-- Descubrimiento de patrones de horarios que favorezcan más interacción de los usuarios.
-- Generación de insights para la optimización de los horarios de operación y atributos que mejoran la satisfacción del cliente.
+- **Accesibilidad y calificaciones:** Se espera que los negocios con facilidades como acceso para sillas de ruedas y aceptación de tarjetas de crédito reciban mejores calificaciones.
+- **Ubicación y reseñas:** Los negocios en grandes ciudades o áreas turísticas tienden a recibir más reseñas y calificaciones más altas.
+- **Años de operación y estabilidad:** Los negocios con más años de operación podrían tener calificaciones más estables y recibir más reseñas.
+- **Servicios personalizados y satisfacción:** Negocios que ofrecen servicios personalizados, como reservas y ser pet-friendly, tienden a recibir mejores calificaciones.
 
-Este análisis permitirá comprender mejor las dinámicas entre los negocios y las reseñas, ayudando a los propietarios a optimizar la operación y a generar mejores experiencias para los clientes.
+Este análisis proporcionará insights clave para los propietarios de negocios, ayudándolos a mejorar sus operaciones y optimizar la satisfacción del cliente.
