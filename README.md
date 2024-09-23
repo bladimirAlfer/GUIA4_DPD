@@ -15,6 +15,8 @@ Este proyecto tiene como objetivo principal el análisis de la relación entre l
 
 ## Dataset
 
+![Dataset](images/datasetyelp.png)
+
 ### Datos de Negocios
 
 El primer dataset contiene información detallada sobre los negocios. Este dataset tiene un total de **150,346 registros** y **14 columnas**. Las variables clave de este dataset son:
