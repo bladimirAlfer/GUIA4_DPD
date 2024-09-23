@@ -1,8 +1,7 @@
 # Proyecto: Análisis de Negocios y Reseñas
 
-![Portada del Proyecto](images/logo.png)
 
-<img src="URL_DE_LA_IMAGEN" alt="Portada del Proyecto" width="600"/>
+<img src="images/logo.png" alt="Portada del Proyecto" width="600"/>
 
 ## Descripción del Proyecto
 
