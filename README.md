@@ -1,5 +1,9 @@
 # Proyecto: Análisis de Negocios y Reseñas
 
+![Portada del Proyecto](images/logo.png)
+
+<img src="URL_DE_LA_IMAGEN" alt="Portada del Proyecto" width="600"/>
+
 ## Descripción del Proyecto
 
 Este proyecto tiene como objetivo principal el análisis de la relación entre los negocios y las reseñas de usuarios, utilizando dos datasets principales: uno que contiene información sobre los negocios y otro con reseñas. La idea es explorar los patrones y las tendencias que influyen en las calificaciones, el número de reseñas, la utilidad de las reseñas y otros factores, como la ubicación, las categorías del negocio y los horarios de operación.
