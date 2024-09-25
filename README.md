@@ -81,7 +81,7 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
 ## Exploración y Análisis de Datos
 
 
-## 1. **¿Los negocios que cuentan con servicios adicionales como WiFi, TV, estacionamiento, entre otros, tienden a recibir mejores calificaciones de los clientes?**
+### 1. **¿Los negocios que cuentan con servicios adicionales como WiFi, TV, estacionamiento, entre otros, tienden a recibir mejores calificaciones de los clientes?**
    - **Variables clave**: 
      - `WiFi`, `HasTV`, `BusinessParking`, `OutdoorSeating`, `Alcohol`, `RestaurantsReservations`
      - `stars` (calificación promedio).
@@ -98,7 +98,7 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
 
 ---
 
-## 2. **¿Cómo varían las calificaciones y la cantidad de reseñas dependiendo de la ubicación geográfica del negocio?**
+### 2. **¿Cómo varían las calificaciones y la cantidad de reseñas dependiendo de la ubicación geográfica del negocio?**
    - **Variables clave**: 
      - `city`, `state`, `latitude`, `longitude`, `stars` (calificación promedio), `review_count` (número de reseñas).
    - **Objetivo**: 
@@ -114,7 +114,7 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
 
 ---
 
-## 3. **¿Los negocios con más años de operación tienden a tener calificaciones más estables o superiores en comparación con los negocios más nuevos?**
+### 3. **¿Los negocios con más años de operación tienden a tener calificaciones más estables o superiores en comparación con los negocios más nuevos?**
    - **Variables clave**: 
      - `year_opened`, `stars`, `review_count`, `is_open`.
    - **Objetivo**: 
@@ -130,7 +130,7 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
 
 ---
 
-## 4. **¿Qué categorías de negocios tienen un mayor porcentaje de locales cerrados y cómo ha sido el comportamiento de las calificaciones de estas categorías en los últimos años?**
+### 4. **¿Qué categorías de negocios tienen un mayor porcentaje de locales cerrados y cómo ha sido el comportamiento de las calificaciones de estas categorías en los últimos años?**
    - **Variables clave**: 
      - `categories` (categorías de negocio), `is_open`, `stars`, `review_count`.
    - **Objetivo**: 
@@ -153,7 +153,7 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
 
 ---
 
-## 5. **¿Qué factores contribuyen a que una reseña sea considerada "útil" por otros usuarios?**
+### 5. **¿Qué factores contribuyen a que una reseña sea considerada "útil" por otros usuarios?**
    - **Variables clave**: 
      - `useful` (votos útiles en la reseña), `cool`, `funny`, `text_length` (longitud de la reseña).
    - **Objetivo**: 
