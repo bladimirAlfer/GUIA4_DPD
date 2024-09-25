@@ -114,23 +114,53 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
 
 ---
 
-## Resultados Esperados
+## Resultados 
 
-1. **Servicios adicionales y calificaciones**: 
-   - Los negocios que ofrecen facilidades adicionales como WiFi, TV y estacionamiento deberían mostrar una tendencia hacia mejores calificaciones, lo cual sugiere que estas facilidades influyen positivamente en la experiencia del cliente.
+# Resultados
 
-2. **Ubicación y reseñas**: 
-   - Los negocios en grandes ciudades y áreas turísticas tienden a recibir más reseñas y calificaciones más altas en comparación con aquellos en zonas rurales o menos pobladas.
+## 1. ¿Los negocios que cuentan con servicios adicionales como WiFi, TV, estacionamiento, entre otros, tienden a recibir mejores calificaciones de los clientes?
 
-3. **Años de operación y calificaciones**: 
-   - Los negocios más antiguos probablemente tengan calificaciones más estables a lo largo del tiempo, mientras que los negocios nuevos podrían mostrar variaciones más marcadas en sus primeras reseñas.
+![Calificaciones por facilidades](images/facilidades_boxplot.png)
 
-4. **Categorías con más cierres**: 
-   - Se espera que las categorías como **Restaurantes** y **Nightlife** tengan un mayor porcentaje de locales cerrados, posiblemente debido a las altas exigencias de la competencia. También se espera que estas categorías tengan variaciones más notables en sus calificaciones a lo largo del tiempo.
+**Insight**: WiFi, Alcohol, y BusinessAcceptsCreditCards están relacionados con calificaciones más altas, ya que tienen medianas cercanas o superiores a 4 estrellas. Las otras características reciben buenas calificaciones, pero el rango es más amplio, lo que indica que estos servicios no son un factor decisivo en la satisfacción del cliente
+---
 
-5. **Factores de utilidad en las reseñas**: 
-   - Reseñas más largas y detalladas tienden a recibir más votos útiles, lo que sugiere que el contenido y la profundidad de la reseña son factores clave en cómo los usuarios perciben su utilidad.
+## 2. ¿Cómo varían las calificaciones y la cantidad de reseñas dependiendo de la ubicación geográfica del negocio?
+
+![Porcentaje de reseñas por estado](images/mapa_calificaciones_estado.png)
+
+**Insight**: Se observa que algunos estados como California (CA), Nevada (NV) e Idaho (IH) tienen un porcentaje más alto de reseñas con calificaciones superiores a 4. Esto puede sugerir que los clientes en estos estados tienden a tener una percepción más positiva de los negocios locales o que los negocios de esas áreas ofrecen una mejor experiencia al cliente.
 
 ---
 
-Este análisis proporcionará **insights clave** para los propietarios de negocios, ayudándolos a optimizar sus servicios y mejorar la experiencia del cliente, basada en los patrones de reseñas y calificaciones.
+## 3. ¿Los negocios con más años de operación tienden a tener calificaciones más estables o superiores en comparación con los negocios más nuevos?
+
+![Evolución calificaciones: Antiguos vs Nuevos](images/evolucion_calificaciones_antiguos_nuevos.png)
+
+**Insight**: Los negocios nuevos muestran una tendencia más ascendente en sus calificaciones, mientras que los negocios antiguos parecen tener una caída constante en la valoración con el paso de los años. En los años recientes, los negocios nuevos tienen calificaciones superiores a las de los negocios antiguos, lo que podría sugerir que estos están mejor adaptados a las expectativas de los consumidores actuales.
+
+---
+
+## 4. ¿Qué categorías de negocios tienen un mayor porcentaje de locales cerrados y cómo ha sido el comportamiento de las calificaciones de estas categorías en los últimos años?
+
+![Porcentaje de negocios cerrados por categoría](images/negocios_cerrados_por_categoria.png)
+
+**Insight**: Restaurantes tiene el mayor porcentaje de locales cerrados, superando el 30%. Esto puede deberse a la alta competitividad y las dificultades que enfrentan los negocios del sector gastronómico, como cambios en las preferencias de los clientes. Las categorías relacionadas con la gastronomía y el entretenimiento nocturno son las más afectadas por los cierres de locales.
+
+![Porcentaje de negocios cerrados por categoría_2](images/negocios_cerrados_por_categoria_2.png)
+
+**Insight**: Los negocios abiertos tienden a tener calificaciones más estables y más altas a lo largo de los años. En cambio, los negocios cerrados han mostrado una caída en sus calificaciones en los últimos años, lo que puede haber contribuido a su cierre. Las calificaciones son un indicador importante de la viabilidad de un negocio, ya que los negocios con mejores calificaciones parecen tener más probabilidades de permanecer abiertos.
+
+
+---
+
+## 5. ¿Qué factores contribuyen a que una reseña sea considerada "útil" por otros usuarios?
+
+![Relación entre longitud de reseñas y votos útiles](images/longitud_resenas_vs_votos_utiles.png)
+
+**Insight**: Los negocios nuevos muestran una tendencia más ascendente en sus calificaciones, mientras que los negocios antiguos parecen tener una caída constante en la valoración con el paso de los años. En los años recientes, los negocios nuevos tienen calificaciones superiores a las de los negocios antiguos, lo que podría sugerir que estos están mejor adaptados a las expectativas de los consumidores actuales.
+
+
+---
+
+
