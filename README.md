@@ -31,7 +31,7 @@ El primer dataset contiene información detallada sobre los negocios. Este datas
 
 ### Datos de Reseñas
 
-El segundo dataset contiene información sobre las reseñas de los usuarios. Este dataset cuenta con **500,000 registros** y **9 columnas**. Las variables clave de este dataset son:
+El segundo dataset contiene información sobre las reseñas de los usuarios. Este dataset cuenta con **6,990,280 registros** y **9 columnas**. Las variables clave de este dataset son:
 
 - **review_id** (string): Identificador único de la reseña.
 - **user_id** (string): Identificador único del usuario que escribió la reseña.
