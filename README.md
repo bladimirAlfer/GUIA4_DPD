@@ -45,6 +45,28 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
 
 ---
 
+## Metodología de Análisis
+
+1. **Limpieza y preparación de los datos**:
+   - Se eliminaron valores faltantes y se imputaron datos cuando fue necesario.
+   - Se transformaron los atributos booleanos en formato adecuado para el análisis.
+   - Se generaron nuevas variables como `year_opened` para categorizar los negocios según su antigüedad.
+
+2. **Análisis de correlaciones**:
+   - Se utilizaron métodos de correlación para investigar la relación entre las calificaciones, el número de reseñas y los atributos clave del negocio, como la accesibilidad, los servicios adicionales, y la ubicación.
+
+3. **Visualización de los datos**:
+   - Se crearon gráficos de correlaciones, mapas coropléticos y gráficos de barras para representar cómo la ubicación geográfica, los años de operación, y las categorías de los negocios influyen en las calificaciones y las reseñas.
+   - Se utilizaron gráficos de dispersión para analizar la relación entre la longitud de las reseñas y los votos útiles.
+
+4. **Feature Scaling**:
+   - Se aplicó **estandarización** o **normalización** a las variables numéricas como `review_count`, `stars`, `useful` para asegurar que las variables estén en la misma escala y evitar sesgos en el análisis predictivo.
+
+5. **Modelado predictivo**:
+   - Se implementó un modelo de clasificación utilizando métodos de filtro como **Ganancia de Información** para predecir si una reseña será considerada "útil" basándose en las características del negocio y la reseña.
+  
+---
+
 # Exploración y Análisis de Datos de Negocios
 
 ## Preguntas de Investigación Iniciales
@@ -135,24 +157,4 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
 
 **Insight**: La longitud de las reseñas no parece ser un factor determinante para recibir votos útiles, ya que hay una gran variación en el número de votos útiles recibidos por reseñas de diferentes longitudes. Esto sugiere que el contenido o la relevancia de la reseña juega un papel más importante.
 
----
 
-## Metodología de Análisis
-
-1. **Limpieza y preparación de los datos**:
-   - Se eliminaron valores faltantes y se imputaron datos cuando fue necesario.
-   - Se transformaron los atributos booleanos en formato adecuado para el análisis.
-   - Se generaron nuevas variables como `year_opened` para categorizar los negocios según su antigüedad.
-
-2. **Análisis de correlaciones**:
-   - Se utilizaron métodos de correlación para investigar la relación entre las calificaciones, el número de reseñas y los atributos clave del negocio, como la accesibilidad, los servicios adicionales, y la ubicación.
-
-3. **Visualización de los datos**:
-   - Se crearon gráficos de correlaciones, mapas coropléticos y gráficos de barras para representar cómo la ubicación geográfica, los años de operación, y las categorías de los negocios influyen en las calificaciones y las reseñas.
-   - Se utilizaron gráficos de dispersión para analizar la relación entre la longitud de las reseñas y los votos útiles.
-
-4. **Feature Scaling**:
-   - Se aplicó **estandarización** o **normalización** a las variables numéricas como `review_count`, `stars`, `useful` para asegurar que las variables estén en la misma escala y evitar sesgos en el análisis predictivo.
-
-5. **Modelado predictivo**:
-   - Se implementó un modelo de clasificación utilizando métodos de filtro como **Ganancia de Información** para predecir si una reseña será considerada "útil" basándose en las características del negocio y la reseña.
