@@ -2,6 +2,23 @@
 
 ![Portada del Proyecto](images/logo.png)
 
+## Índice
+
+1. [Descripción del Proyecto](#descripción-del-proyecto)
+2. [Dataset](#dataset)
+    - [Datos de Negocios](#datos-de-negocios)
+    - [Datos de Reseñas](#datos-de-reseñas)
+3. [Metodología de Análisis](#metodología-de-análisis)
+4. [Exploración y Análisis de Datos](#exploración-y-análisis-de-datos-de-negocios)
+    - [Pregunta 1: ¿Los negocios que cuentan con servicios adicionales como WiFi, TV, estacionamiento, entre otros, tienden a recibir mejores calificaciones de los clientes?](#1-los-negocios-que-cuentan-con-servicios-adicionales-como-wifi-tv-estacionamiento-entre-otros-tienden-a-recibir-mejores-calificaciones-de-los-clientes)
+    - [Pregunta 2: ¿Cómo varían las calificaciones y la cantidad de reseñas dependiendo de la ubicación geográfica del negocio?](#2-cómo-varían-las-calificaciones-y-la-cantidad-de-reseñas-dependiendo-de-la-ubicación-geográfica-del-negocio)
+    - [Pregunta 3: ¿Los negocios con más años de operación tienden a tener calificaciones más estables o superiores en comparación con los negocios más nuevos?](#3-los-negocios-con-más-años-de-operación-tienden-a-tener-calificaciones-más-estables-o-superiores-en-comparación-con-los-negocios-más-nuevos)
+    - [Pregunta 4: ¿Qué categorías de negocios tienen un mayor porcentaje de locales cerrados y cómo ha sido el comportamiento de las calificaciones de estas categorías en los últimos años?](#4-qué-categorías-de-negocios-tienen-un-mayor-porcentaje-de-locales-cerrados-y-cómo-ha-sido-el-comportamiento-de-las-calificaciones-de-estas-categorías-en-los-últimos-años)
+    - [Pregunta 5: ¿Qué factores contribuyen a que una reseña sea considerada "útil" por otros usuarios?](#5-qué-factores-contribuyen-a-que-una-reseña-sea-considerada-útil-por-otros-usuarios)
+
+
+---
+
 ## Descripción del Proyecto
 
 Este proyecto tiene como objetivo analizar los datos de negocios y sus reseñas para descubrir patrones y generar insights valiosos para la toma de decisiones de los propietarios de negocios. Utilizando un conjunto de datos de negocios y reseñas, se realizarán varias preguntas de investigación para explorar las interacciones entre los clientes y los negocios, así como las características que influyen en las calificaciones y la cantidad de reseñas.
@@ -67,7 +84,7 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
   
 ---
 
-# Exploración y Análisis de Datos de Negocios
+# Exploración y Análisis de Datos
 
 ## Preguntas de Investigación Iniciales
 
