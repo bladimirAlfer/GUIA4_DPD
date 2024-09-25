@@ -56,7 +56,7 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
    - **Objetivo**: 
      - Determinar si los negocios que ofrecen servicios adicionales (como WiFi, TV, estacionamiento, etc.) reciben mejores calificaciones, lo cual puede sugerir que estos servicios aumentan la satisfacción del cliente.
    - **Análisis**: 
-     - Se realizaron gráficos de boxplot para comparar las calificaciones promedio de negocios con y sin estos servicios adicionales. También se analizaron correlaciones entre las facilidades y la calificación promedio.
+     - Se realizaron gráficos de boxplot para comparar las calificaciones promedio de negocios con estos servicios adicionales.
 
 <p align="center">
   <img src="images/facilidades_boxplot.png" alt="Calificaciones por facilidades" width="600"/>
