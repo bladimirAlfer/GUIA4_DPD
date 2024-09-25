@@ -9,7 +9,7 @@
     - [Datos de Negocios](#datos-de-negocios)
     - [Datos de Reseñas](#datos-de-reseñas)
 3. [Metodología de Análisis](#metodología-de-análisis)
-4. [Exploración y Análisis de Datos](#exploración-y-análisis-de-datos-de-negocios)
+4. [Exploración y Análisis de Datos](#exploración-y-análisis-de-datos)
    
 ---
 
