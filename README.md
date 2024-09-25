@@ -116,13 +116,12 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
 
 ## Resultados 
 
-# Resultados
-
 ## 1. ¿Los negocios que cuentan con servicios adicionales como WiFi, TV, estacionamiento, entre otros, tienden a recibir mejores calificaciones de los clientes?
 
 ![Calificaciones por facilidades](images/facilidades_boxplot.png)
 
 **Insight**: WiFi, Alcohol, y BusinessAcceptsCreditCards están relacionados con calificaciones más altas, ya que tienen medianas cercanas o superiores a 4 estrellas. Las otras características reciben buenas calificaciones, pero el rango es más amplio, lo que indica que estos servicios no son un factor decisivo en la satisfacción del cliente
+
 ---
 
 ## 2. ¿Cómo varían las calificaciones y la cantidad de reseñas dependiendo de la ubicación geográfica del negocio?
