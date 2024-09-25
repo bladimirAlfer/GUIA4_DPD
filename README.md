@@ -49,20 +49,15 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
 
 ## Preguntas de Investigación Iniciales
 
-1. **¿Los negocios que ofrecen facilidades de accesibilidad y conveniencia, como acceso para sillas de ruedas o pago con tarjeta, tienden a recibir mejores calificaciones por parte de los clientes?**
-   - Variables clave: `WheelchairAccessible`, `BusinessAcceptsCreditCards`, `stars`, `RestaurantsPriceRange2`, `BusinessParking`, `OutdoorSeating`.
+1. **¿Los negocios que cuentan con servicios adicionales como WiFi, Tv,  estacionamiento, entre otros, tienden a recibir mejores calificaciones de los clientes?**
 
-2. **¿Los negocios ubicados en grandes ciudades o destinos turísticos tienden a recibir más reseñas y mejores calificaciones que los negocios en áreas más pequeñas o rurales?**
-   - Variables clave: `city`, `state`, `latitude`, `longitude`, `stars`, `review_count`.
+2. **¿Cómo varían las calificaciones y la cantidad de reseñas dependiendo de la ubicación geográfica del negocio?**
 
-3. **¿Los negocios con más años de operación tienen calificaciones más estables y reciben una mayor cantidad de reseñas en comparación con los negocios más nuevos?**
-   - Variables clave: `year`, `review_count`, `stars`, `is_open`.
+3. **¿Los negocios con más años de operación tienden a tener calificaciones más estables o superiores en comparación con los negocios más nuevos?**
 
-4. **¿Los negocios que ofrecen servicios personalizados, como citas previas, reservas o que permiten la presencia de mascotas (pet-friendly), tienden a recibir mejores calificaciones por parte de los clientes?**
-   - Variables clave: `ByAppointmentOnly`, `RestaurantsReservations`, `DogsAllowed`, `stars`, `GoodForMeal`, `RestaurantsGoodForGroups`.
+4. **¿Qué categorías de negocios tienen un mayor porcentaje de locales cerrados y cómo ha sido el comportamiento de las calificaciones de estas categorías en los últimos años?**
 
-5. **¿Los negocios que implementan servicios de atención personalizada, como happy hour, música en vivo o promociones especiales, tienen mayor engagement en las reseñas?**
-   - Variables clave: `HappyHour`, `Music`, `Alcohol`, `BestNights`, `review_count`, `useful`, `cool`.
+5. **¿Qué factores contribuyen a que una reseña sea considerada "útil" por otros usuarios?**
 
 
 ### Metodología de Análisis
