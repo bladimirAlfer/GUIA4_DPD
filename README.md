@@ -10,13 +10,7 @@
     - [Datos de Reseñas](#datos-de-reseñas)
 3. [Metodología de Análisis](#metodología-de-análisis)
 4. [Exploración y Análisis de Datos](#exploración-y-análisis-de-datos-de-negocios)
-    - [Pregunta 1: ¿Los negocios que cuentan con servicios adicionales como WiFi, TV, estacionamiento, entre otros, tienden a recibir mejores calificaciones de los clientes?](#1-los-negocios-que-cuentan-con-servicios-adicionales-como-wifi-tv-estacionamiento-entre-otros-tienden-a-recibir-mejores-calificaciones-de-los-clientes)
-    - [Pregunta 2: ¿Cómo varían las calificaciones y la cantidad de reseñas dependiendo de la ubicación geográfica del negocio?](#2-cómo-varían-las-calificaciones-y-la-cantidad-de-reseñas-dependiendo-de-la-ubicación-geográfica-del-negocio)
-    - [Pregunta 3: ¿Los negocios con más años de operación tienden a tener calificaciones más estables o superiores en comparación con los negocios más nuevos?](#3-los-negocios-con-más-años-de-operación-tienden-a-tener-calificaciones-más-estables-o-superiores-en-comparación-con-los-negocios-más-nuevos)
-    - [Pregunta 4: ¿Qué categorías de negocios tienen un mayor porcentaje de locales cerrados y cómo ha sido el comportamiento de las calificaciones de estas categorías en los últimos años?](#4-qué-categorías-de-negocios-tienen-un-mayor-porcentaje-de-locales-cerrados-y-cómo-ha-sido-el-comportamiento-de-las-calificaciones-de-estas-categorías-en-los-últimos-años)
-    - [Pregunta 5: ¿Qué factores contribuyen a que una reseña sea considerada "útil" por otros usuarios?](#5-qué-factores-contribuyen-a-que-una-reseña-sea-considerada-útil-por-otros-usuarios)
-
-
+   
 ---
 
 ## Descripción del Proyecto
@@ -84,11 +78,10 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
   
 ---
 
-# Exploración y Análisis de Datos
+## Exploración y Análisis de Datos
 
-## Preguntas de Investigación Iniciales
 
-### 1. **¿Los negocios que cuentan con servicios adicionales como WiFi, TV, estacionamiento, entre otros, tienden a recibir mejores calificaciones de los clientes?**
+## 1. **¿Los negocios que cuentan con servicios adicionales como WiFi, TV, estacionamiento, entre otros, tienden a recibir mejores calificaciones de los clientes?**
    - **Variables clave**: 
      - `WiFi`, `HasTV`, `BusinessParking`, `OutdoorSeating`, `Alcohol`, `RestaurantsReservations`
      - `stars` (calificación promedio).
@@ -105,7 +98,7 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
 
 ---
 
-### 2. **¿Cómo varían las calificaciones y la cantidad de reseñas dependiendo de la ubicación geográfica del negocio?**
+## 2. **¿Cómo varían las calificaciones y la cantidad de reseñas dependiendo de la ubicación geográfica del negocio?**
    - **Variables clave**: 
      - `city`, `state`, `latitude`, `longitude`, `stars` (calificación promedio), `review_count` (número de reseñas).
    - **Objetivo**: 
@@ -121,7 +114,7 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
 
 ---
 
-### 3. **¿Los negocios con más años de operación tienden a tener calificaciones más estables o superiores en comparación con los negocios más nuevos?**
+## 3. **¿Los negocios con más años de operación tienden a tener calificaciones más estables o superiores en comparación con los negocios más nuevos?**
    - **Variables clave**: 
      - `year_opened`, `stars`, `review_count`, `is_open`.
    - **Objetivo**: 
@@ -137,7 +130,7 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
 
 ---
 
-### 4. **¿Qué categorías de negocios tienen un mayor porcentaje de locales cerrados y cómo ha sido el comportamiento de las calificaciones de estas categorías en los últimos años?**
+## 4. **¿Qué categorías de negocios tienen un mayor porcentaje de locales cerrados y cómo ha sido el comportamiento de las calificaciones de estas categorías en los últimos años?**
    - **Variables clave**: 
      - `categories` (categorías de negocio), `is_open`, `stars`, `review_count`.
    - **Objetivo**: 
@@ -160,7 +153,7 @@ El segundo dataset contiene información sobre las reseñas de los usuarios. Est
 
 ---
 
-### 5. **¿Qué factores contribuyen a que una reseña sea considerada "útil" por otros usuarios?**
+## 5. **¿Qué factores contribuyen a que una reseña sea considerada "útil" por otros usuarios?**
    - **Variables clave**: 
      - `useful` (votos útiles en la reseña), `cool`, `funny`, `text_length` (longitud de la reseña).
    - **Objetivo**: 
